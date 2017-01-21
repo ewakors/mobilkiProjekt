@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="#ffffff"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView style="@style/child"
+            android:id="@+id/TextView01"
+            android:layout_width="305dp"
+            android:textColor="#000000"
+            android:textSize="24dip"
+            android:layout_margin="5dip"
+            android:text="@string/string_cart"
+            android:layout_height="match_parent"
+            android:textAlignment="center"></TextView>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/ListViewCatalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#ffffff"
+        android:clickable="true"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="@dimen/marginList"
+        android:divider="@color/white">
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/ListViewCatalogWomen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#ffffff"
+        android:clickable="true"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="@dimen/marginList"
+        android:divider="@color/white"
+        android:layout_weight="3.58">
+    </ListView>
+
+    <ListView
+        android:id="@+id/ListViewCatalogMen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#ffffff"
+        android:clickable="true"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="@dimen/marginList"
+        android:divider="@color/white"
+        android:layout_weight="3.08">
+    </ListView>
+
+    <TextView android:layout_height="wrap_content"
+        android:id="@+id/TextViewSubtotal"
+        android:layout_width="fill_parent"
+        android:textColor="#000000"
+        android:text="@string/string_subtotal"
+        android:textStyle="bold"
+        android:layout_marginLeft="200dp">
+    </TextView>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/buttnCartNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/string_next"></Button>
+
+</LinearLayout>

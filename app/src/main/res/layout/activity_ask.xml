@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Artur: zamówienie zrealizowane bardzo szybko, jakość produkty wysoka, polecam, daje 10/10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView3" />
+    <TextView
+        android:text="Joanna: swoje zakupy dostałam po 3 dniach, ubrania nie zostały uszkodzone w czasie podróży, solidna firma."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/textView4" />
+
+    <Button
+        android:text="Dodaj opinię"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginImageTop"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/marginImageTop"
+        android:id="@+id/buttonAddAsk" />
+
+</LinearLayout>

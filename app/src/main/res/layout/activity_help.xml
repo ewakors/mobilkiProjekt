@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_help"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.us.mobilki.HelpActivity">
+
+    <Button
+        android:text="www.wi.pb.edu.pl"
+        android:id="@+id/buttonContact"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="38dp"
+        android:onClick="browser"
+        android:gravity="center"
+        android:background="@color/white"
+
+       />
+
+</LinearLayout>

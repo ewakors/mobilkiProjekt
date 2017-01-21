@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/myProfile"
+        android:title="@string/string_my_profile"
+        app:showAsAction="never"
+        android:checkable="false">
+    </item>
+
+    <item android:id="@+id/aboutUs"
+        android:title="@string/string_about_us"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/Settings"
+        android:title="@string/string_settings"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/Help"
+        android:title="@string/string_help"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/logOut"
+        android:title="@string/string_log_out"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/buttonSearch"
+        android:title="Search"
+        app:showAsAction="always"
+        android:icon="@drawable/lupa"
+        />
+
+    <item android:id="@+id/buttonCart"
+        android:title="@string/string_cart"
+        app:showAsAction="always"
+        android:icon="@drawable/cart"
+        />
+
+
+</menu>

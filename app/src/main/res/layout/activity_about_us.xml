@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="@string/string_ask"
+        android:id="@+id/buttonAsk"
+        style="@style/buttonAboutUs"
+        android:paddingRight="95dp" />
+
+    <Button
+        android:text="@string/string_contakt"
+        android:id="@+id/buttonContact"
+        style="@style/buttonAboutUs"
+        android:paddingRight="222dp" />
+
+    <Button
+        android:text="@string/string_map"
+        android:id="@+id/buttonMap"
+        style="@style/buttonAboutUs"
+        android:paddingRight="226dp" />
+    <Button
+        android:text="@string/string_point_post"
+        android:id="@+id/buttonPostPoint"
+        style="@style/buttonAboutUs"
+        android:paddingRight="220dp" />
+</LinearLayout>

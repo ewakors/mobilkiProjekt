@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView style="@style/child"
+            android:id="@+id/TextViewMap"
+            android:layout_width="305dp"
+            android:textColor="#000000"
+            android:textSize="24dip"
+            android:layout_margin="15dip"
+            android:text="@string/string_map"
+            android:layout_height="match_parent"
+            android:textAlignment="center"></TextView>
+
+    </LinearLayout>
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="292dp"-->
+        <!--android:layout_marginLeft="18dp"-->
+        <!--android:layout_marginRight="18dp"-->
+        <!--app:srcCompat="@drawable/map"-->
+        <!--android:id="@+id/imageView2"-->
+        <!--android:layout_weight="0.10" />-->
+
+    <fragment
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map2"
+        android:layout_width="match_parent"
+        android:layout_height="332dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+    />
+
+    <LinearLayout
+        style="@style/wrap"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp">
+        <RelativeLayout
+            style="@style/wrap">
+            <TextView
+                android:id="@+id/adres"
+                style="@style/detailsText"
+                android:text="Adres: "
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/marginImageTop"
+                android:layout_alignParentTop="true">
+            </TextView>
+
+            <TextView
+                android:layout_width="168dp"
+                style="@style/Text"
+                android:id="@+id/textAdres"
+                android:text="ul.Wiejska 45A"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="18dp">
+        <RelativeLayout
+            style="@style/wrap">
+
+            <TextView
+                android:layout_width="168dp"
+                style="@style/Text"
+                android:id="@+id/textAdres2"
+                android:text="15-000 Białystok"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="#ffffff"
+    android:weightSum="1">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView style="@style/child"
+            android:id="@+id/TextView01"
+            android:layout_width="305dp"
+            android:textColor="#000000"
+            android:textSize="24dip"
+            android:layout_margin="15dip"
+            android:text="@string/string_order"
+            android:layout_height="match_parent"
+            android:textAlignment="center"></TextView>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/ListViewCatalog"
+        android:layout_width="369dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#ffffff"
+        android:clickable="true"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="@dimen/marginList"
+        android:divider="@color/white">
+
+    </ListView>
+
+    <ListView
+        android:id="@+id/ListViewCatalogWomen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#ffffff"
+        android:clickable="true"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="@dimen/marginList"
+        android:divider="@color/white"
+        android:layout_weight="3.58">
+    </ListView>
+
+    <ListView
+        android:id="@+id/ListViewCatalogMen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:cacheColorHint="#ffffff"
+        android:clickable="true"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="@dimen/marginList"
+        android:divider="@color/white"
+        android:layout_weight="3.08">
+    </ListView>
+    <LinearLayout
+        style="@style/wrap"
+        android:layout_marginTop="@dimen/marginImageTop"
+        android:layout_marginLeft="@dimen/marginImageTop">
+        <RelativeLayout
+            style="@style/wrap">
+            <TextView
+                android:id="@+id/sending"
+                style="@style/detailsText"
+                android:text="@string/string_type_sending"
+                android:layout_width="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+            </TextView>
+            <TextView
+                android:layout_width="168dp"
+                style="@style/Text"
+                android:id="@+id/text_sending"
+                android:text="Paczkomat24"
+                android:layout_height="30dp"
+                android:layout_marginRight="115dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap"
+        android:layout_marginLeft="@dimen/marginImageTop">
+        <RelativeLayout
+            style="@style/wrap">
+            <TextView
+                android:id="@+id/payment"
+                style="@style/detailsText"
+                android:text="@string/string_type_payment"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/marginImageTop"
+                android:layout_alignParentTop="true">
+            </TextView>
+
+            <TextView
+                android:layout_width="168dp"
+                style="@style/Text"
+                android:id="@+id/text_payment"
+                android:text="Przelew"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginImageTop"
+        android:id="@+id/TextViewSubtotal"
+        android:layout_width="fill_parent"
+        android:textColor="#000000"
+        android:text="@string/string_subtotal"
+        android:textStyle="bold"
+        android:layout_marginLeft="200dp">
+    </TextView>
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/buttonOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/marginPass"
+        android:layout_marginRight="@dimen/marginPass"
+        android:text="@string/string_order_finish"></Button>
+
+
+</LinearLayout>

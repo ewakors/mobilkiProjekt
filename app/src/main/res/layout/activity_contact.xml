@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView style="@style/child"
+            android:id="@+id/TextView01"
+            android:layout_width="305dp"
+            android:textColor="#000000"
+            android:textSize="24dip"
+            android:layout_margin="15dip"
+            android:text="Dane kontaktowe"
+            android:layout_height="match_parent"
+            android:textAlignment="center"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp">
+        <RelativeLayout
+            style="@style/wrap">
+            <TextView
+                android:id="@+id/email"
+                style="@style/detailsText"
+                android:text="Email: "
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/marginImageTop"
+                android:layout_alignParentTop="true">
+            </TextView>
+
+            <TextView
+                android:layout_width="168dp"
+                style="@style/Text"
+                android:id="@+id/textEmail"
+                android:text="mojsklep@gmail.com"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp">
+        <RelativeLayout
+            style="@style/wrap">
+            <TextView
+                android:id="@+id/telephon"
+                style="@style/detailsText"
+                android:text="Telefon: "
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/marginImageTop"
+                android:layout_alignParentTop="true">
+            </TextView>
+
+            <TextView
+                android:layout_width="168dp"
+                style="@style/Text"
+                android:id="@+id/textTelephon"
+                android:text="514-58-69-42"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp">
+        <RelativeLayout
+            style="@style/wrap">
+            <TextView
+                android:id="@+id/adres"
+                style="@style/detailsText"
+                android:text="Adres: "
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/marginImageTop"
+                android:layout_alignParentTop="true">
+            </TextView>
+
+            <TextView
+                android:layout_width="168dp"
+                style="@style/Text"
+                android:id="@+id/textAdres"
+                android:text="ul.Wielska 45A"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/wrap"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="18dp">
+        <RelativeLayout
+            style="@style/wrap">
+
+            <TextView
+                android:layout_width="168dp"
+                style="@style/Text"
+                android:id="@+id/textAdres2"
+                android:text="15-000 Białystok"
+                android:layout_height="30dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

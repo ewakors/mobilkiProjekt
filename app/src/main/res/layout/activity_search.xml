@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginPass"
+        android:layout_marginRight="@dimen/marginPass"
+        android:layout_marginTop="@dimen/marginPass"/>
+
+    <Button
+
+        android:text="@string/string_search"
+        android:id="@+id/btnSearch"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/marginPass"
+        android:layout_marginRight="@dimen/marginPass"/>
+
+</LinearLayout>
